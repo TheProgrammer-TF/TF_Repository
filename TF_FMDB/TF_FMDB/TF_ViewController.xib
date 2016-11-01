@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TF_ViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bur-IA-6Ki">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="创建数据库"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="23" y="64" width="104" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="createBtn:" destination="-1" eventType="touchUpInside" id="frd-vL-bdm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBd-iB-c8y">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="更新数据库"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="141" y="64" width="98" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="updateBtn:" destination="-1" eventType="touchUpInside" id="IJ0-dh-XIv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8b-WI-hAR">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="插入数据"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="263" y="64" width="84" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="insertBtn:" destination="-1" eventType="touchUpInside" id="qm9-Lx-0Qg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGb-yb-STH">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="删除数据"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="41" y="114" width="68" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="deleteBtn:" destination="-1" eventType="touchUpInside" id="oz4-R1-yRU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxk-Ce-Rdg">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="查找数据"/>
+                    <variation key="widthClass=compact" fixedFrame="YES">
+                        <rect key="frame" x="152" y="114" width="60" height="30"/>
+                    </variation>
+                    <connections>
+                        <action selector="lookBtn:" destination="-1" eventType="touchUpInside" id="rRM-HE-ico"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Bur-IA-6Ki"/>
+                    <exclude reference="aBd-iB-c8y"/>
+                    <exclude reference="i8b-WI-hAR"/>
+                    <exclude reference="VGb-yb-STH"/>
+                    <exclude reference="jxk-Ce-Rdg"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Bur-IA-6Ki"/>
+                    <include reference="aBd-iB-c8y"/>
+                    <include reference="i8b-WI-hAR"/>
+                    <include reference="VGb-yb-STH"/>
+                    <include reference="jxk-Ce-Rdg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
